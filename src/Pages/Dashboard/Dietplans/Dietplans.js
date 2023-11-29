@@ -52,29 +52,54 @@ function Dietplans({ uid, userdata }) {
             color: 'rgba(50, 30, 89, 1)', width: 'calc(80vw - 60px)'
         }}>
             <h2>Hi {userdata.name}!</h2>
-            <h2 style={{ marginTop: '20px' }}>Diet plans by your subscribed nutritionists</h2>
+            <h2 style={{ marginTop: '20px' }}>Planos de dieta feitos por seus nutricionistas inscritos</h2>
+            <div style={{ display: 'flex' }}>
             <div style={{ display: 'grid', marginTop: '30px', gridTemplateColumns: 'repeat(3,auto)', width: '100%', gridRowGap: '10px', gridColumnGap: '10px' }}>
                 {
-                    plans.slice(1)?.map((rec) => (
                         <div style={{ border: "3px solid #B6D1FC", borderRadius: '20px', width: 'auto', maxWidth: 'calc(30vw)', display: `flex`, padding: "10px", flexDirection: 'column', gap: '20px' }}>
-                            <h3>Breakfast</h3>
+                            <h3>Café da Manhã</h3>
                             <div style={{ border: "3px solid #B6D1FC", display: 'flex', borderRadius: '10px', height: 'auto', width: 'calc(100% - 20px)', padding: "5px", alignItems: 'center', gap: '20px' }}>
-                                <img src={rec.brek.image} alt="" style={{ height: "50px", width: '50px' }} />
-                                <h4>{rec.brek.title}</h4>
+                                <img src="https://www.sabornamesa.com.br/media/k2/items/cache/e892a1b47238866896ddb8af293cfaee_XL.jpg" alt="" style={{ height: "50px", width: '50px' }} />
+                                <h4>1 Pão, 2 ovos mexidos e Bebida</h4>
                             </div>
-                            <h3>Lunch</h3>
+                            <h3>Almoço</h3>
                             <div style={{ border: "3px solid #B6D1FC", display: 'flex', width: 'calc(100% - 20px)', borderRadius: '10px', padding: "5px", height: 'auto', alignItems: 'center', gap: '20px' }}>
-                                <img src={rec.lunch.image} alt="" style={{ height: "50px", width: '50px' }} />
-                                <h4>{rec.lunch.title}</h4>
+                                <img src="https://dietapratica.com/product_images/z/213/box-010-file-frango-brocolis-arroz-integral-diagonal-600x600__43127_zoom.jpg" alt="" style={{ height: "50px", width: '50px' }} />
+                                <h4>100g de Arroz, 200g de Frango e Salada</h4>
                             </div>
-                            <h3>Dinner</h3>
+                            <h3>Jantar</h3>
                             <div style={{ border: "3px solid #B6D1FC", display: 'flex', width: 'calc(100% - 20px)', borderRadius: '10px', height: 'auto', padding: "5px", alignItems: 'center', gap: '20px' }}>
-                                <img src={rec.dinner.image} alt="" style={{ height: "50px", width: '50px' }} />
-                                <h4>{rec.dinner.title}</h4>
+                                <img src="https://blog-obahortifruti.redeoba.com.br/wp-content/uploads/2023/02/521-9_OB-CAPAS-1920X792-BLOG-FEV-TAPIOCA-V2.jpg" alt="" style={{ height: "50px", width: '50px' }} />
+                                <h4>Tapioca e Café Preto</h4>
+                                <img src="https://marolacomcarambola.com.br/wp-content/uploads/2020/06/receita-de-batata-doce-recheada-com-frango-cremoso-16.jpg" alt="" style={{ height: "50px", width: '50px' }} />
+                                <h4>200g Batata doce, 100g Frango</h4>
                             </div>
                         </div>
-                    ))
                 }
+            </div>
+            <div style={{ display: 'grid', marginTop: '30px', gridTemplateColumns: 'repeat(3,auto)', width: '100%', gridRowGap: '10px', gridColumnGap: '10px' }}>
+                {
+                        <div style={{ border: "3px solid #B6D1FC", borderRadius: '20px', width: 'auto', maxWidth: 'calc(30vw)', display: `flex`, padding: "10px", flexDirection: 'column', gap: '20px' }}>
+                            <h3>Café da Manhã</h3>
+                            <div style={{ border: "3px solid #B6D1FC", display: 'flex', borderRadius: '10px', height: 'auto', width: 'calc(100% - 20px)', padding: "5px", alignItems: 'center', gap: '20px' }}>
+                                <img src="https://www.sabornamesa.com.br/media/k2/items/cache/e892a1b47238866896ddb8af293cfaee_XL.jpg" alt="" style={{ height: "50px", width: '50px' }} />
+                                <h4>Pão</h4>
+                            </div>
+                            <h3>Almoço</h3>
+                            <div style={{ border: "3px solid #B6D1FC", display: 'flex', width: 'calc(100% - 20px)', borderRadius: '10px', padding: "5px", height: 'auto', alignItems: 'center', gap: '20px' }}>
+                                <img src="https://dietapratica.com/product_images/z/213/box-010-file-frango-brocolis-arroz-integral-diagonal-600x600__43127_zoom.jpg" alt="" style={{ height: "50px", width: '50px' }} />
+                                <h4>Arroz Frango e Salada</h4>
+                            </div>
+                            <h3>Jantar</h3>
+                            <div style={{ border: "3px solid #B6D1FC", display: 'flex', width: 'calc(100% - 20px)', borderRadius: '10px', height: 'auto', padding: "5px", alignItems: 'center', gap: '20px' }}>
+                                <img src="https://blog-obahortifruti.redeoba.com.br/wp-content/uploads/2023/02/521-9_OB-CAPAS-1920X792-BLOG-FEV-TAPIOCA-V2.jpg" alt="" style={{ height: "50px", width: '50px' }} />
+                                <h4>Tapioca e Café Preto</h4>
+                                <img src="https://marolacomcarambola.com.br/wp-content/uploads/2020/06/receita-de-batata-doce-recheada-com-frango-cremoso-16.jpg" alt="" style={{ height: "50px", width: '50px' }} />
+                                <h4>Batata doce e Frango</h4>
+                            </div>
+                        </div>
+                }
+            </div>
             </div>
         </div>
     )

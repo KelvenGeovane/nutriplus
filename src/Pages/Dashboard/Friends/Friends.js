@@ -76,13 +76,13 @@ const Friends = (props) => {
         <div style={{ width: '50%' }}>
           <p className="friends__username friends__username_mob">
             {" "}
-            {`Hii ${props.myname}`}{" "}
+            {`Oi ${props.myname}`}{" "}
           </p>
           <p className="friends__leaderboard__heading friends__leaderboard__heading_mob">
             LeaderBoard
           </p>
           <div className="leaderboard__card leaderboard__card_mob"></div>
-          <p className="yourfriends yourfriends_mob">Your Friends</p>
+          <p className="yourfriends yourfriends_mob">Seus Amigos</p>
           <div className="friends_card friedns_card_mob">
             {
               requests?.map(({ ids, dc }) => (

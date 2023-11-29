@@ -296,20 +296,20 @@ function Dashboard(props) {
                         <div className="goals__dashboard goals__dashboard__mobile" style={{ marginBottom: '20px' }}>
                             <div className="track track__mobile">
                                 <p>Hi {userdata?.name}</p>
-                                <h3 style={{ color: 'rgba(50, 30, 89, 1)' }}>Your goal for today</h3>
+                                <h3 style={{ color: 'rgba(50, 30, 89, 1)' }}>Seu objetivo para hoje</h3>
                                 <div className="track__boxes track__boxes__mobile">
                                     <div className="box box__mobile">
                                         <div className="title">
-                                            <b>Calories</b>
+                                            <b>Calorias</b>
                                             <p>
-                                                {details?.cal} calories
+                                                2000 Calorias
                                             </p>
                                         </div>
                                         <div className="render_circle">
                                             {
                                                 brek === 1 && lunch === 1 && dinner === 1 ? (<CheckIcon fontSize="large" style={{ fontSize: '6rem', color: 'rgb(0,155,255)' }} />) : (
                                                     window.screen.width > 500 ? (
-                                                        <CircularComponent size={150} thick={7} value={stats?.cal * 100 / details?.cal} color="rgba(105, 157, 255, 1)" text={Math.ceil(stats?.cal) + " kcal"} />
+                                                        <CircularComponent size={150} thick={7} value={stats?.cal * 100 / details?.cal} color="rgba(105, 157, 255, 1)" text= "200g" />
                                                     ) : (
                                                         <CircularComponent size={window.screen.width * 0.15 + window.screen.height * 0.1} thick={7} value={stats?.cal * 100 / details?.cal} color="rgba(105, 157, 255, 1)" text={Math.ceil(stats?.cal) + " kcal"} />
                                                     ))
@@ -318,8 +318,8 @@ function Dashboard(props) {
                                     </div>
                                     <div className="box box__mobile">
                                         <div className="title">
-                                            <b>Protein</b>
-                                            <p>{Math.ceil(dumfb[0]?.pro + dumfb[1]?.pro + dumfb[2]?.pro)} g</p>
+                                            <b>Proteina</b>
+                                            <p>149 g</p>
                                             {/* <p>{Math.ceil(dum[1]?.nutrition.nutrients[indices.p2].amount + dum[0]?.nutrition.nutrients[indices.p1].amount + dum[2]?.nutrition.nutrients[indices.p3].amount)} g</p> */}
                                         </div>
                                         <div className="render_circle">
@@ -332,7 +332,7 @@ function Dashboard(props) {
                                                                 // (Math.ceil(dum[1]?.nutrition.nutrients[indices.p2].amount + dum[0]?.nutrition.nutrients[indices.p1].amount + dum[2]?.nutrition.nutrients[indices.p3].amount))
                                                                 (dumfb[0]?.pro + dumfb[1]?.pro + dumfb[2]?.pro)
                                                             }
-                                                            text={Math.ceil(stats?.pro) + " g"} color="rgba(167, 212, 137, 1)" />
+                                                            text= "47g" color="rgba(167, 212, 137, 1)" />
                                                     ) : (
 
                                                         <CircularComponent size={window.screen.width * 0.15 + window.screen.height * 0.1} thick={7} value={stats?.pro * 100 /
@@ -345,8 +345,8 @@ function Dashboard(props) {
                                     </div>
                                     <div className="box box__mobile">
                                         <div className="title">
-                                            <b>Fats</b>
-                                            <p>{Math.ceil(dumfb[0]?.fat + dumfb[1]?.fat + dumfb[2]?.fat)} g</p>
+                                            <b>Gordura</b>
+                                            <p>66 g</p>
                                             {/* <p>{Math.ceil(dum[0]?.nutrition.nutrients[indices.c1].amount + dum[2]?.nutrition.nutrients[indices.c3].amount + dum[1]?.nutrition.nutrients[indices.c2].amount)} g</p> */}
                                         </div>
                                         <div className="render_circle">
@@ -354,7 +354,7 @@ function Dashboard(props) {
                                                 brek === 1 && lunch === 1 && dinner === 1 ? (<CheckIcon fontSize="large" style={{ fontSize: '6rem', color: 'rgb(0,155,255)' }} />) : (
                                                     window.screen.width > 500 ? (
 
-                                                        <CircularComponent size={150} thick={7} text={Math.ceil(stats?.fat) + " g"} color="rgba(249, 169, 188, 1)" value={stats?.fat * 100 /
+                                                        <CircularComponent size={150} thick={7} text= "30g" color="rgba(249, 169, 188, 1)" value={stats?.fat * 100 /
                                                             // (Math.ceil(dum[0]?.nutrition.nutrients[indices.c1].amount + dum[2]?.nutrition.nutrients[indices.c3].amount + dum[1]?.nutrition.nutrients[indices.c2].amount))
                                                             (dumfb[0]?.fat + dumfb[1]?.fat + dumfb[2]?.fat)
                                                         } />
@@ -370,8 +370,8 @@ function Dashboard(props) {
                                     </div>
                                     <div className="box box__mobile">
                                         <div className="title">
-                                            <b>Carbs</b>
-                                            <p>{Math.ceil(dumfb[0]?.carbs + dumfb[1]?.carbs + dumfb[2]?.carbs)} g</p>
+                                            <b>Carboidrato</b>
+                                            <p>100 g</p>
                                             {/* <p>{Math.ceil(dum[2]?.nutrition.nutrients[indices.cb3].amount + dum[1]?.nutrition.nutrients[indices.cb2].amount + dum[0]?.nutrition.nutrients[indices.cb1].amount)} g</p> */}
                                         </div>
                                         <div className="render_circle">
@@ -379,7 +379,7 @@ function Dashboard(props) {
                                                 brek === 1 && lunch === 1 && dinner === 1 ? (<CheckIcon fontSize="large" style={{ fontSize: '6rem', color: 'rgb(0,155,255)' }} />) : (
                                                     window.screen.width > 500 ?
 
-                                                        <CircularComponent size={150} text={Math.ceil(stats?.carbs) + " g"} color="rgba(131, 216, 223, 1)" thick={7} value={stats?.carbs * 100 /
+                                                        <CircularComponent size={150} text= "50g" color="rgba(131, 216, 223, 1)" thick={7} value={stats?.carbs * 100 /
                                                             // Math.ceil(dum[2]?.nutrition.nutrients[indices.cb3].amount + dum[1]?.nutrition.nutrients[indices.cb2].amount + dum[0]?.nutrition.nutrients[indices.cb1].amount)
                                                             (dumfb[0]?.carbs + dumfb[1]?.carbs + dumfb[2]?.carbs)
                                                         } />
@@ -399,7 +399,7 @@ function Dashboard(props) {
                                 <div className="time_to_eat time_to_eat__mobile">
                                     <div style={{ display: 'flex', gap: "10px", alignItems: 'center' }}>
                                         <img src={Cup} height="54px" width="54px" />
-                                        <h3>Breakfast</h3>
+                                        <h3>Café da Manhã</h3>
                                         {/* <div style={{ display: `${brek === 0 ? "flex" : "none"}`, alignItems: 'center', gap: "10px", cursor: 'pointer', marginLeft: 'auto' }}>
                                             <p>Add</p>
                                             <AddCircleIcon />
@@ -408,7 +408,7 @@ function Dashboard(props) {
                                     {
                                         Array(1).fill().map((_, i) => (
                                             <div style={{ margin: "10px 0", display: 'flex', padding: '10px', gap: "10px", position: 'relative', alignItems: 'center', border: '3px solid rgba(182, 209, 252, 1)', borderRadius: '10px' }}>
-                                                <div style={{ display: `${brek === 1 ? "flex" : "none"}`, position: 'absolute', top: 0, height: "100%", width: '100%', textAlign: 'center', fontSize: '2.5rem', borderRadius: "inherit", margin: "0 -10px", alignItems: 'center', justifyContent: 'center', color: 'rgba(105, 157, 255, 1)', background: '#ddeaff', zIndex: 10 }}><p>All Done</p><CheckIcon fontSize="large" style={{ background: 'rgb(0,155,255)', color: 'white', marginLeft: '20px', borderRadius: "50%" }} /></div>
+                                                <div style={{ display: `${brek === 1 ? "flex" : "none"}`, position: 'absolute', top: 0, height: "100%", width: '100%', textAlign: 'center', fontSize: '2.5rem', borderRadius: "inherit", margin: "0 -10px", alignItems: 'center', justifyContent: 'center', color: 'rgba(105, 157, 255, 1)', background: '#ddeaff', zIndex: 10 }}><p>Concluído</p><CheckIcon fontSize="large" style={{ background: 'rgb(0,155,255)', color: 'white', marginLeft: '20px', borderRadius: "50%" }} /></div>
                                                 {
                                                     window.screen.width > 500 ? (
                                                         <img src={dumfb[0]?.img} style={{ height: '100px', width: '100px', borderRadius: '10px' }}></img>
@@ -425,32 +425,27 @@ function Dashboard(props) {
                                                                 <>
                                                                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                                                                         <div style={{ background: 'rgba(105, 157, 255, 1)', height: '70px', width: '70px', clipPath: 'circle(40%)', display: 'flex', color: "white", alignItems: 'center', justifyContent: 'center' }}>
-                                                                            {/* {Math.ceil(dum[0]?.nutrition.nutrients[indices.cl1].amount)} */}
-                                                                            {Math.ceil(dumfb[0]?.cal)}
+                                                                            <b>450</b>
                                                                         </div>
-                                                                        <p style={{ fontSize: 'x-small' }}>CALORIES</p>
+                                                                        <p style={{ fontSize: 'x-small' }}>CALORIAS</p>
                                                                     </div>
                                                                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                                                                         <div style={{ background: 'rgba(105, 157, 255, 1)', height: '70px', width: '70px', clipPath: 'circle(40%)', display: 'flex', color: "white", alignItems: 'center', justifyContent: 'center' }}>
-
-                                                                            {/* {Math.ceil(dum[0]?.nutrition.nutrients[indices.p1].amount)} */}
-                                                                            {Math.ceil(dumfb[0]?.pro)}
+                                                                            <b>187</b>
                                                                         </div>
-                                                                        <p style={{ fontSize: 'x-small' }}>PROTEIN</p>
+                                                                        <p style={{ fontSize: 'x-small' }}>PROTEINAS</p>
                                                                     </div>
                                                                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                                                                         <div style={{ background: 'rgba(105, 157, 255, 1)', height: '70px', width: '70px', clipPath: 'circle(40%)', display: 'flex', color: "white", alignItems: 'center', justifyContent: 'center' }}>
-                                                                            {/* {Math.ceil(dum[0]?.nutrition.nutrients[indices.c1].amount)} */}
-                                                                            {Math.ceil(dumfb[0]?.fat)}
+                                                                            <b>26</b>
                                                                         </div>
-                                                                        <p style={{ fontSize: 'x-small' }}>FATS</p>
+                                                                        <p style={{ fontSize: 'x-small' }}>GORDURAS</p>
                                                                     </div>
                                                                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                                                                         <div style={{ background: 'rgba(105, 157, 255, 1)', height: '70px', width: '70px', clipPath: 'circle(40%)', display: 'flex', color: "white", alignItems: 'center', justifyContent: 'center' }}>
-                                                                            {/* {Math.ceil(dum[0]?.nutrition.nutrients[indices.cb1].amount)} */}
-                                                                            {Math.ceil(dumfb[0]?.carbs)}
+                                                                            <b>90</b>
                                                                         </div>
-                                                                        <p style={{ fontSize: 'x-small' }}>CARBS</p>
+                                                                        <p style={{ fontSize: 'x-small' }}>CARBOIDRATOS</p>
                                                                     </div>
                                                                 </>
                                                             ) :
@@ -519,16 +514,15 @@ function Dashboard(props) {
                                 <div className="time_to_eat time_to_eat__mobile">
                                     <div style={{ display: 'flex', gap: "10px", alignItems: 'center' }}>
                                         <img src={Comp_Cup} height="54px" width="54px" />
-                                        <h3>Lunch</h3>
+                                        <h3>Almoço</h3>
                                         {/* <div style={{ display: `${lunch === 0 ? "flex" : "none"}`, alignItems: 'center', gap: "10px", cursor: 'pointer', marginLeft: 'auto' }}>
                                             <p>Add</p>
                                             <AddCircleIcon />
                                         </div> */}
                                     </div>
                                     {
-                                        Array(1).fill().map((_, i) => (
                                             <div style={{ margin: "10px 0", display: 'flex', position: "relative", padding: '10px', gap: "10px", alignItems: 'center', border: '3px solid rgba(182, 209, 252, 1)', borderRadius: '10px' }}>
-                                                <div style={{ display: `${lunch === 1 ? "flex" : "none"}`, position: 'absolute', top: 0, height: "100%", width: '100%', textAlign: 'center', fontSize: '2.5rem', borderRadius: "inherit", margin: "0 -10px", alignItems: 'center', justifyContent: 'center', color: 'rgba(105, 157, 255, 1)', background: '#ddeaff', zIndex: 10 }}><p>All Done</p><CheckIcon fontSize="large" style={{ background: 'rgb(0,155,255)', color: 'white', marginLeft: '20px', borderRadius: "50%" }} /></div>
+                                                <div style={{ display: `${lunch === 1 ? "flex" : "none"}`, position: 'absolute', top: 0, height: "100%", width: '100%', textAlign: 'center', fontSize: '2.5rem', borderRadius: "inherit", margin: "0 -10px", alignItems: 'center', justifyContent: 'center', color: 'rgba(105, 157, 255, 1)', background: '#ddeaff', zIndex: 10 }}><p>Concluído</p><CheckIcon fontSize="large" style={{ background: 'rgb(0,155,255)', color: 'white', marginLeft: '20px', borderRadius: "50%" }} /></div>
                                                 {
                                                     window.screen.width > 500 ? (
                                                         <img src={dumfb[2]?.img} style={{ height: '100px', width: '100px', borderRadius: '10px' }}></img>
@@ -544,31 +538,27 @@ function Dashboard(props) {
                                                                 <>
                                                                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                                                                         <div style={{ background: 'rgba(105, 157, 255, 1)', height: '70px', width: '70px', clipPath: 'circle(40%)', display: 'flex', color: "white", alignItems: 'center', justifyContent: 'center' }}>
-                                                                            {/* {Math.ceil(dum[1]?.nutrition.nutrients[indices.cl2].amount)} */}
-                                                                            {Math.ceil(dumfb[2]?.cal)}
+                                                                            <b>350</b>
                                                                         </div>
-                                                                        <p style={{ fontSize: 'x-small' }}>CALORIES</p>
+                                                                        <p style={{ fontSize: 'x-small' }}>CALORIAS</p>
                                                                     </div>
                                                                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                                                                         <div style={{ background: 'rgba(105, 157, 255, 1)', height: '70px', width: '70px', clipPath: 'circle(40%)', display: 'flex', color: "white", alignItems: 'center', justifyContent: 'center' }}>
-                                                                            {/* {Math.ceil(dum[1]?.nutrition.nutrients[indices.p2].amount)} */}
-                                                                            {Math.ceil(dumfb[2]?.pro)}
+                                                                            <b>125</b>
                                                                         </div>
-                                                                        <p style={{ fontSize: 'x-small' }}>PROTEIN</p>
+                                                                        <p style={{ fontSize: 'x-small' }}>PROTEINAS</p>
                                                                     </div>
                                                                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                                                                         <div style={{ background: 'rgba(105, 157, 255, 1)', height: '70px', width: '70px', clipPath: 'circle(40%)', display: 'flex', color: "white", alignItems: 'center', justifyContent: 'center' }}>
-                                                                            {/* {Math.ceil(dum[1]?.nutrition.nutrients[indices.c2].amount)} */}
-                                                                            {Math.ceil(dumfb[2]?.fat)}
+                                                                            <b>52</b>
                                                                         </div>
-                                                                        <p style={{ fontSize: 'x-small' }}>FATS</p>
+                                                                        <p style={{ fontSize: 'x-small' }}>GORDURAS</p>
                                                                     </div>
                                                                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                                                                         <div style={{ background: 'rgba(105, 157, 255, 1)', height: '70px', width: '70px', clipPath: 'circle(40%)', display: 'flex', color: "white", alignItems: 'center', justifyContent: 'center' }}>
-                                                                            {/* {Math.ceil(dum[1]?.nutrition.nutrients[indices.cb2].amount)} */}
-                                                                            {Math.ceil(dumfb[2]?.carbs)}
+                                                                            <b>42</b>
                                                                         </div>
-                                                                        <p style={{ fontSize: 'x-small' }}>CARBS</p>
+                                                                        <p style={{ fontSize: 'x-small' }}>CARBOIDRATOS</p>
                                                                     </div>
                                                                 </>
                                                             ) :
@@ -631,13 +621,12 @@ function Dashboard(props) {
                                                     }
                                                 </div>
                                             </div>
-                                        ))
                                     }
                                 </div>
                                 <div className="time_to_eat time_to_eat__mobile">
                                     <div style={{ display: 'flex', gap: "10px", alignItems: 'center' }}>
                                         <img src={Kinda_Cup} height="54px" width="54px" />
-                                        <h3>Dinner</h3>
+                                        <h3>Jantar</h3>
                                         {/* <div style={{ display: `${dinner === 0 ? "flex" : "none"}`, alignItems: 'center', gap: "10px", cursor: 'pointer', marginLeft: 'auto' }}>
                                             <p>Add</p>
                                             <AddCircleIcon />
@@ -646,7 +635,7 @@ function Dashboard(props) {
                                     {
                                         Array(1).fill().map((_, i) => (
                                             <div style={{ margin: "10px 0", display: 'flex', padding: '10px', position: 'relative', gap: "10px", alignItems: 'center', border: '3px solid rgba(182, 209, 252, 1)', borderRadius: '10px' }}>
-                                                <div style={{ display: `${dinner === 1 ? "flex" : "none"}`, position: 'absolute', top: 0, height: "100%", width: '100%', textAlign: 'center', fontSize: '2.5rem', borderRadius: "inherit", margin: "0 -10px", alignItems: 'center', justifyContent: 'center', color: 'rgba(105, 157, 255, 1)', background: '#ddeaff', zIndex: 10 }}><p>All Done</p><CheckIcon fontSize="large" style={{ background: 'rgb(0,155,255)', color: 'white', marginLeft: '20px', borderRadius: "50%" }} /></div>
+                                                <div style={{ display: `${dinner === 1 ? "flex" : "none"}`, position: 'absolute', top: 0, height: "100%", width: '100%', textAlign: 'center', fontSize: '2.5rem', borderRadius: "inherit", margin: "0 -10px", alignItems: 'center', justifyContent: 'center', color: 'rgba(105, 157, 255, 1)', background: '#ddeaff', zIndex: 10 }}><p>Concluído</p><CheckIcon fontSize="large" style={{ background: 'rgb(0,155,255)', color: 'white', marginLeft: '20px', borderRadius: "50%" }} /></div>
                                                 {
                                                     window.screen.width > 500 ? (
                                                         <img src={dumfb[1]?.img} style={{ height: '100px', width: '100px', borderRadius: '10px' }}></img>
@@ -662,31 +651,27 @@ function Dashboard(props) {
                                                                 <>
                                                                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                                                                         <div style={{ background: 'rgba(105, 157, 255, 1)', height: '70px', width: '70px', clipPath: 'circle(40%)', display: 'flex', color: "white", alignItems: 'center', justifyContent: 'center' }}>
-                                                                            {/* {Math.ceil(dum[2]?.nutrition.nutrients[indices.cl3].amount)} */}
-                                                                            {Math.ceil(dumfb[1]?.cal)}
+                                                                        <b>320</b>
                                                                         </div>
-                                                                        <p style={{ fontSize: 'x-small' }}>CALORIES</p>
+                                                                        <p style={{ fontSize: 'x-small' }}>CALORIAS</p>
                                                                     </div>
                                                                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                                                                         <div style={{ background: 'rgba(105, 157, 255, 1)', height: '70px', width: '70px', clipPath: 'circle(40%)', display: 'flex', color: "white", alignItems: 'center', justifyContent: 'center' }}>
-                                                                            {/* {Math.ceil(dum[2]?.nutrition.nutrients[indices.p3].amount)} */}
-                                                                            {Math.ceil(dumfb[1]?.pro)}
+                                                                        <b>80</b>
                                                                         </div>
-                                                                        <p style={{ fontSize: 'x-small' }}>PROTEIN</p>
+                                                                        <p style={{ fontSize: 'x-small' }}>PROTEINAS</p>
                                                                     </div>
                                                                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                                                                         <div style={{ background: 'rgba(105, 157, 255, 1)', height: '70px', width: '70px', clipPath: 'circle(40%)', display: 'flex', color: "white", alignItems: 'center', justifyContent: 'center' }}>
-                                                                            {/* {Math.ceil(dum[2]?.nutrition.nutrients[indices.c3].amount)} */}
-                                                                            {Math.ceil(dumfb[1]?.fat)}
+                                                                        <b>135</b>
                                                                         </div>
-                                                                        <p style={{ fontSize: 'x-small' }}>FATS</p>
+                                                                        <p style={{ fontSize: 'x-small' }}>GORDURAS</p>
                                                                     </div>
                                                                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                                                                         <div style={{ background: 'rgba(105, 157, 255, 1)', height: '70px', width: '70px', clipPath: 'circle(40%)', display: 'flex', color: "white", alignItems: 'center', justifyContent: 'center' }}>
-                                                                            {/* {Math.ceil(dum[2]?.nutrition.nutrients[indices.cb3].amount)} */}
-                                                                            {Math.ceil(dumfb[1]?.carbs)}
+                                                                        <b>115</b>
                                                                         </div>
-                                                                        <p style={{ fontSize: 'x-small' }}>CARBS</p>
+                                                                        <p style={{ fontSize: 'x-small' }}>CARBOIDRATOS</p>
                                                                     </div>
                                                                 </>
                                                             ) :

@@ -38,12 +38,12 @@ function RecipeBook({ uid, userdata }) {
     return (
         <div className="recipe__dash recipe__dash__mobile" style={{ marginLeft: '20px' }}>
             <div className="recipe__front recipe__front_mobile">
-                <p>Hi {userdata.name}</p>
+                <p>Oi {userdata.name}</p>
                 {
                     window.screen.width > 500 ? (
-                        <h2 style={{ marginTop: '40px', color: '#321E59' }}>Your Favourite Recipes!</h2>
+                        <h2 style={{ marginTop: '40px', color: '#321E59' }}>Suas Receitas Favoritas!</h2>
                     ) : (
-                        <h2 style={{ marginTop: '5vw', color: '#321E59' }}>Your Favourite Recipes!</h2>
+                        <h2 style={{ marginTop: '5vw', color: '#321E59' }}>Suas Receitas Favoritas</h2>
                     )
                 }
                 <div className="track__boxes recipe__boxes recipe__boxes__mobile">

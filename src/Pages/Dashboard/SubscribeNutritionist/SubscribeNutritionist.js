@@ -76,8 +76,8 @@ function SubscribeNutritionist(props) {
         <div style={{ marginTop: '60px', marginLeft: '40px', display: 'flex', width: 'calc(80vw - 80px)', height: '90vh' }}>
             <div style={{ minWidth: '75%' }}>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '20px' }}>
-                    <p>Hi {props.udata.name}</p>
-                    <h3>Your Subscribed Nutritionist</h3>
+                    <p>Oi {props.udata.name}</p>
+                    <h3>Seus Nutricionistas Inscritos</h3>
                 </div>
 
                 <div style={{ marginTop: '50px', display: 'flex', alignItems: 'center', flexWrap: 1, gap: '20px' }}>

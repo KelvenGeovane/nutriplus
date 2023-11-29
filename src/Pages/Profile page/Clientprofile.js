@@ -96,7 +96,7 @@ export default function Clientprofile(props) {
             <div className="parent__container">
 
                 <div className="profile__title">
-                    <h3> Your Profile </h3>
+                    <h3> Seu Perfil </h3>
                 </div>
 
                 <div className="user_photo">

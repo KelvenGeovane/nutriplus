@@ -72,36 +72,36 @@ function DashDrawer(props) {
                 {user.currentUser?.displayName === "User" ? <>
                     <ListItem onClick={() => { props.pageset(0) }} className='dash-item' style={{ background: `${props.page === 0 ? '#1B3E81' : '#1f1b48'}`, cursor: 'pointer' }}>
                         <ListItemIcon><img src={Goals} height="16px" width="16px" /></ListItemIcon>
-                        <ListItemText disableTypography style={{ fontSize: '15px', fontFamily: 'Poppins, sans-serif' }}>Today</ListItemText>
+                        <ListItemText disableTypography style={{ fontSize: '15px', fontFamily: 'Poppins, sans-serif' }}>Hoje</ListItemText>
                     </ListItem>
 
                     <ListItem onClick={() => { props.pageset(1) }} className='dash-item' style={{ background: `${props.page === 1 ? '#1B3E81' : '#1f1b48'}`, cursor: 'pointer' }}>
                         <ListItemIcon><img src={Progress} height="16px" width="16px" /></ListItemIcon>
-                        <ListItemText disableTypography style={{ fontSize: '15px', fontFamily: 'Poppins, sans-serif' }}>Progress</ListItemText>
+                        <ListItemText disableTypography style={{ fontSize: '15px', fontFamily: 'Poppins, sans-serif' }}>Progresso</ListItemText>
                     </ListItem>
 
                     <ListItem onClick={() => { props.pageset(2) }} className='dash-item' style={{ background: `${props.page === 2 ? '#1B3E81' : '#1f1b48'}`, cursor: 'pointer' }}>
                         <ListItemIcon><img src={Diet} height="16px" width="16px" /></ListItemIcon>
-                        <ListItemText disableTypography style={{ fontSize: '15px', fontFamily: 'Poppins, sans-serif' }}>Your Diet Plan</ListItemText>
+                        <ListItemText disableTypography style={{ fontSize: '15px', fontFamily: 'Poppins, sans-serif' }}>Seu Plano de Dieta</ListItemText>
                     </ListItem>
 
                     <ListItem onClick={() => { props.pageset(3) }} className='dash-item' style={{ background: `${props.page === 3 ? '#1B3E81' : '#1f1b48'}`, cursor: 'pointer' }}>
                         <ListItemIcon><img src={Book} height="16px" width="16px" /></ListItemIcon>
-                        <ListItemText disableTypography style={{ fontSize: '15px', fontFamily: 'Poppins, sans-serif' }}>Recipe Book</ListItemText>
+                        <ListItemText disableTypography style={{ fontSize: '15px', fontFamily: 'Poppins, sans-serif' }}>Livro de Receitas</ListItemText>
                     </ListItem>
                     <ListItem onClick={() => { props.pageset(4) }} className='dash-item' style={{ background: `${props.page === 4 ? '#1B3E81' : '#1f1b48'}`, cursor: 'pointer' }}>
                         <ListItemIcon><img src={Bookmark} height="16px" width="16px" /></ListItemIcon>
-                        <ListItemText disableTypography style={{ fontSize: '15px', fontFamily: 'Poppins, sans-serif' }}>Saved Blogs</ListItemText>
+                        <ListItemText disableTypography style={{ fontSize: '15px', fontFamily: 'Poppins, sans-serif' }}>Blogs Salvos</ListItemText>
                     </ListItem>
 
                     <ListItem onClick={() => { props.pageset(5) }} className='dash-item' style={{ background: `${props.page === 5 ? '#1B3E81' : '#1f1b48'}`, cursor: 'pointer' }}>
                         <ListItemIcon><img src={Nutri} height="16px" width="16px" /></ListItemIcon>
-                        <ListItemText disableTypography style={{ fontSize: '15px', fontFamily: 'Poppins, sans-serif' }}>Subscribed Nutritionists</ListItemText>
+                        <ListItemText disableTypography style={{ fontSize: '15px', fontFamily: 'Poppins, sans-serif' }}>Nutricionistas inscritos</ListItemText>
                     </ListItem>
 
                     <ListItem onClick={() => { props.pageset(6) }} className='dash-item' style={{ background: `${props.page === 6 ? '#1B3E81' : '#1f1b48'}`, cursor: 'pointer' }}>
                         <ListItemIcon><img src={Friends} height="16px" width="16px" /></ListItemIcon>
-                        <ListItemText disableTypography style={{ fontSize: '15px', fontFamily: 'Poppins, sans-serif' }}>Your Friends</ListItemText>
+                        <ListItemText disableTypography style={{ fontSize: '15px', fontFamily: 'Poppins, sans-serif' }}>Seus Amigos</ListItemText>
                     </ListItem>
                 </> : <>
                     <ListItem onClick={() => { props.pageset(0) }} className='dash-item' style={{ background: `${props.page === 0 ? '#1B3E81' : '#1f1b48'}`, cursor: 'pointer' }}>
@@ -110,7 +110,7 @@ function DashDrawer(props) {
                     </ListItem>
                     <ListItem onClick={() => { props.pageset(1) }} className='dash-item' style={{ background: `${props.page === 1 ? '#1B3E81' : '#1f1b48'}`, cursor: 'pointer' }}>
                         <ListItemIcon><img src={Progress} height="16px" width="16px" /></ListItemIcon>
-                        <ListItemText disableTypography style={{ fontSize: '15px', fontFamily: 'Poppins, sans-serif' }}>Followers</ListItemText>
+                        <ListItemText disableTypography style={{ fontSize: '15px', fontFamily: 'Poppins, sans-serif' }}>Seguidores</ListItemText>
                     </ListItem>
                 </>}
 

@@ -31,12 +31,12 @@ function SavedBlogs(props) {
         <div className="BlogDashboard  BlogDashboard_mobile">
 
             <div className="Blog_info Blog_info_mobile">
-                <p style={{ fontFamily: 'Poppins', fontWeight: '600', color: '#321E59' }}>Hii {props.udata.name}!</p>
+                <p style={{ fontFamily: 'Poppins', fontWeight: '600', color: '#321E59' }}>Oi {props.udata.name}!</p>
                 {
                     window.screen.width > 500 ?
-                        (<h2 style={{ marginTop: '50px', marginBottom: '25px', color: '#321E59' }}>Your favourite blogs</h2>) :
+                        (<h2 style={{ marginTop: '50px', marginBottom: '25px', color: '#321E59' }}>Seus blogs Favoritos !</h2>) :
 
-                        (<h2 style={{ marginTop: '10vw', marginBottom: '7vw', color: '#321E59' }}>Your favourite blogs</h2>)
+                        (<h2 style={{ marginTop: '10vw', marginBottom: '7vw', color: '#321E59' }}>Seus blogs Favoritos !</h2>)
                 }
                 <div className="Blog_items Blog_items_mobile" style={{width:'100%'}}>
                     {blogdata?.map(blog => (

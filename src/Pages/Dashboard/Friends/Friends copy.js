@@ -114,11 +114,11 @@ const handleClose = () => {
         <div style={{ width: '50%' }}>
           <p className="friends__username friends__username_mob">
             {" "}
-            {`Hii ${myname}!!`}{" "}
+            {`Oi ${myname}!!`}{" "}
           </p>
 
           <p className="friends__leaderboard__heading friends__leaderboard__heading_mob" >
-            LeaderBoard
+          Entre os melhores
 
 
           </p> 
@@ -127,7 +127,7 @@ const handleClose = () => {
           {friends?<LeaderBoard friends = {friends}  my_name = {myname} my_uid = {params.uid} /> :<></> }
 
            </div>
-          <p className="yourfriends yourfriends_mob">Your Friend Requests</p>
+          <p className="yourfriends yourfriends_mob">Solicitações de Amizade</p>
           <div className="friends_card friedns_card_mob">
 
           {
@@ -141,7 +141,7 @@ const handleClose = () => {
             }
           </div>
 
-          <p className="yourfriends yourfriends_mob">Your Friends</p>
+          <p className="yourfriends yourfriends_mob">Seus Amigos</p>
           <div className="friends_card friedns_card_mob">
 
           {

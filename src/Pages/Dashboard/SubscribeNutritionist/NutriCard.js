@@ -77,7 +77,7 @@ function NutriCard(props) {
           </div>
           <div className="nutri__card__follow">
             <div className="nutritionist__follow" onClick={sendNutriFollowRequest}>
-              <h5>Follow</h5>
+              <h5>Seguir</h5>
             </div>
             <div className="nutritionist__follow__gmail">
               <h5>{nutridata?.email}</h5>

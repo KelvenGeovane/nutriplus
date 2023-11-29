@@ -219,15 +219,15 @@ function Header() {
                                 <Link to={`/${user.currentUser.uid}/${user.currentUser.displayName === "User" ? "profile" : "Nutritionistprofile"}`} style={{ textDecoration: 'none', color: 'black' }}>
                                     <MenuItem
                                         onClick={handleClose_Menu}
-                                    >View Profile</MenuItem>
+                                    >Ver Perfil</MenuItem>
                                 </Link>
                                 <Link to={`/${user.currentUser.uid}/${user.currentUser.displayName === "User" ? "dashboard" : "Nutritionistdashboard"}`} style={{ textDecoration: 'none', color: 'black' }}>
                                     <MenuItem
                                         onClick={handleClose_Menu}
-                                    >View Dashboard</MenuItem>
+                                    >Ver Painel de Resultados</MenuItem>
                                 </Link>
                                 <Link to="/" style={{ textDecoration: 'none', color: 'black' }}>
-                                    <MenuItem onClick={handleClose}>Sign Out</MenuItem>
+                                    <MenuItem onClick={handleClose}>Sair</MenuItem>
                                 </Link>
                             </Menu>
                         </div>
